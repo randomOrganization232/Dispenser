@@ -34,3 +34,5 @@ build/
 
 .mvn
 .idea
+src/main/java/com/dispenser/json
+src/main/java/com/dispenser/main
