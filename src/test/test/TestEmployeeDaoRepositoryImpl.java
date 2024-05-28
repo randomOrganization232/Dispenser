@@ -1,6 +1,8 @@
 import com.dispenser.dao.EmployeeDao;
 import com.dispenser.dao.EmployeeDaoImpl;
 import com.dispenser.model.Employee;
+import com.dispenser.service.EmployeeService;
+import com.dispenser.service.EmployeeServiceImpl;
 import org.junit.Assert;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -14,7 +16,7 @@ public class TestEmployeeDaoRepositoryImpl {
 
     @Test
     public void getNormalResult() {
-        EmployeeDao employeeDao = new EmployeeDaoImpl();
+        EmployeeService employeeDao = new EmployeeServiceImpl();
 
         Employee first = Employee
                 .builder()
