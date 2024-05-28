@@ -25,7 +25,7 @@ public class MapperDTO {
                 .build();
     }
 
-    public static EmployeeRequest convertToEmployeeResponse(EmployeeRequestDTO employeeRequestDTO) {
+    public static EmployeeRequest convertToEmployeeRequest(EmployeeRequestDTO employeeRequestDTO) {
 
         EmployeeRequest employeeRequest = EmployeeRequest
                 .builder()

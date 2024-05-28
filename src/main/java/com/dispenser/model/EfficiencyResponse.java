@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.util.Optional;
 import java.util.logging.Logger;
 
 @Setter
@@ -19,4 +20,10 @@ public class EfficiencyResponse {
       this.id = employee.getId();
       this.result = DateSupport.getAsString(employee);
     }
+
+    public EfficiencyResponse(String errors){
+        this.result = errors;
+    }
+
+
 }

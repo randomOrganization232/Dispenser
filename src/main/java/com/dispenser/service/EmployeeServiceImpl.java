@@ -15,7 +15,6 @@ public class EmployeeServiceImpl implements EmployeeService{
     public EmployeeServiceImpl(EmployeeDao employeeDao) {
         this.employeeDao = employeeDao;
     }
-
     @Override
     public Employee getBest(List<Employee> employees) {
         return employeeDao.getBest(employees);
