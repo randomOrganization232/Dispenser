@@ -6,17 +6,10 @@ import lombok.*;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 public class EmployeeDTO {
     private int id;
     private String dateStart;
     private String dateEnd;
 
-    @Override
-    public String toString() {
-        return "\nEmployeeDTO{" +
-                "\nid=" + id +
-                ", \ndateStart='" + dateStart + '\'' +
-                ", \ndateEnd='" + dateEnd + '\'' +
-                "}\n";
-    }
 }
